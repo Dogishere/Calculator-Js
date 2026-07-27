@@ -36,13 +36,11 @@ function calc(calculatorState) {
                 tempResult = parseFloat(numberValues[i]) * parseFloat(numberValues[i + 1]);
                 numberValues.splice(i, 2, `${tempResult}`);
                 operators.splice(i, 1);
-                console.log(numberValues, operators);
             }
             if (operators[i] === "/") {
                 tempResult = parseFloat(numberValues[i]) / parseFloat(numberValues[i + 1]);
                 numberValues.splice(i, 2, `${tempResult}`);
                 operators.splice(i, 1);
-                console.log(numberValues, operators);
             }
         }
         for (let i = 0; i < operators.length; i++) {
@@ -50,13 +48,11 @@ function calc(calculatorState) {
                 tempResult = parseFloat(numberValues[i]) + parseFloat(numberValues[i + 1]);
                 numberValues.splice(i, 2, `${tempResult}`);
                 operators.splice(i, 1);
-                console.log(numberValues, operators);
             }
             if (operators[i] === "-") {
                 tempResult = parseFloat(numberValues[i]) - parseFloat(numberValues[i + 1]);
                 numberValues.splice(i, 2, `${tempResult}`);
                 operators.splice(i, 1);
-                console.log(numberValues, operators);
             }
         }
     }

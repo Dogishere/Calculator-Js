@@ -45,13 +45,11 @@ function calc(calculatorState: State) :string[]{
       tempResult =  parseFloat(numberValues[i]!)*parseFloat(numberValues[i+1]!);
       numberValues.splice(i,2,`${tempResult}`)
       operators.splice(i,1);
-      console.log(numberValues,operators)
       }
       if(operators[i] === "/"){     
       tempResult =  parseFloat(numberValues[i]!)/parseFloat(numberValues[i+1]!);
       numberValues.splice(i,2,`${tempResult}`)
       operators.splice(i,1);
-      console.log(numberValues,operators)
       }
     }
 
@@ -60,13 +58,11 @@ function calc(calculatorState: State) :string[]{
       tempResult =  parseFloat(numberValues[i]!)+parseFloat(numberValues[i+1]!);
       numberValues.splice(i,2,`${tempResult}`)
       operators.splice(i,1);
-      console.log(numberValues,operators)
       }
       if(operators[i] === "-"){     
       tempResult =  parseFloat(numberValues[i]!)-parseFloat(numberValues[i+1]!);
       numberValues.splice(i,2,`${tempResult}`)
       operators.splice(i,1);
-      console.log(numberValues,operators)
       }
     }
   } 
