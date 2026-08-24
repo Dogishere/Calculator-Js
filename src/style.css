@@ -12,20 +12,37 @@ body {
     background-color: rgb(70, 70, 70);
 }
 
+.main{
+    padding: 20px;
+}
+
+.hr-line{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+hr{
+    width: 50%;
+    border: none;
+    height: 10px;
+    background-color: rgb(151, 151, 151);
+    border-radius: 14px;
+}
+
 .container {
     background-color: white;
     width: 250px;
     height: 450px;
     margin: auto;
+    margin-top: 50px;
     display: flex;
-    justify-content: center;  
-    border-radius: 40px;
-    background-color: rgb(235, 235, 235);
+    justify-content: center;
+    border: 5px solid rgb(151, 151, 151);  
+    border-radius: 20px;
 }
 
-.main{
-    padding: 20px;
-}
 
 .buttons {
     display: grid;
@@ -33,32 +50,60 @@ body {
     gap: 5px;
 }
 
-.zero{
-    grid-column: span 2;
+.delete {
+    background-color: #FFD2EA;
 }
 
+.delete:hover {
+    background-color: #ff9bd0;
+}
+
+.reset {
+    background-color: rgb(250, 214, 173);
+}
+
+.reset:hover {
+    background-color: rgb(250, 194, 130);
+}
+
+.zero{
+    grid-column: span 2;
+    background-color: #ECF3F5;
+}
+
+.zero:hover{
+    background-color: #d1ecf3;
+}
 
 .operations {
-    color: orange;
+    background-color: #E8F7FF;
+}
+
+.operations:hover {
+    background-color: #aae1ff;
 }
 
 .equal {
-    color: #fff;
-    background-color: orange !important;
+    background-color: #87DDFF;
+}
+
+.equal:hover {
+    background-color: #3ec8ff;
 }
 
 .buttons button {
     padding: 0.5rem 1rem;
-    background-color: #fff;
     border: 1px solid white;
     border-radius: 15%;
 }
-
-
-
-.buttons button:hover {
-    background-color: rgba(219, 219, 219, 0.699);
+.values {
+    background-color: #ECF3F5;
 }
+
+.values:hover{
+    background-color: #d1ecf3;
+}
+
 
 .result-field {
     height: 30%;
@@ -75,6 +120,6 @@ body {
    border: none;
    resize: none;
    text-align: end;
-   background-color: rgb(235, 235, 235);
+
 }
 

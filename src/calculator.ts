@@ -1,7 +1,5 @@
 import "./style.css";
 
-
-
 const buttons = document.querySelectorAll("button");
 const result = document.querySelector(".result") as HTMLTextAreaElement;
 
