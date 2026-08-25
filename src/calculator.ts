@@ -58,7 +58,7 @@ function calc(): string[] {
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (button.value === "=") {
-      result.value = String(calc());
+      result.value = calc()[0];
     } else if (button.value === "reset") {
       reset();
     } else if (button.value === "del") {
@@ -70,6 +70,5 @@ buttons.forEach((button) => {
 });
 
 function reset(): void {
-
   result.value = "";
 }
